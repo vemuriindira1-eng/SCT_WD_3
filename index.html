@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Interactive Quiz Game</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="quiz-container">
+
+    <div id="quiz-box">
+
+      <div class="quiz-header">
+
+        <h1>Quiz Master</h1>
+
+        <div class="timer">
+          ⏳ Time:
+          <span id="time">60</span>s
+        </div>
+
+      </div>
+
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <div class="question-number" id="questionNumber"></div>
+
+      <div class="question-type" id="questionType"></div>
+
+      <div class="question" id="question"></div>
+
+      <div class="options" id="options"></div>
+
+      <div class="buttons">
+
+        <button class="prev-btn" id="prevBtn">
+          Previous
+        </button>
+
+        <button class="next-btn" id="nextBtn">
+          Next
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="result-box" id="resultBox">
+
+      <h2>🎉 Quiz Completed!</h2>
+
+      <div class="score" id="score"></div>
+
+      <div id="message"></div>
+
+      <div class="review" id="review"></div>
+
+      <button class="restart-btn" onclick="restartQuiz()">
+        Restart Quiz
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
